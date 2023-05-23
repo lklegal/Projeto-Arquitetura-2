@@ -1,5 +1,5 @@
 .data
-	lista: 	     .word   44, 86, 8, 72, 11, 46, 51, 83, 88, 87
+	lista: 	     .word   44, 86, 8, 72, 11, 46, 51, 83, 91, 87
 	limite:      .word   10
 	maior:       .word   0
 
@@ -36,12 +36,12 @@ fim_for:
 	li $v0, 10
 	syscall
 
-#load: lw(0), la(1)
-#comparação: sgt(2)
-#branch: bne(3), beq(4)
-#store: sw(5)
-#soma: add(6)
-#jump: j(7)
-#5 registradores
-#15 instruções
+#load: lw(000), li(001)
+#comparação: sgt(010)
+#branch: beq(011)
+#store: sw(100)
+#soma: add(101)
+#jump: j(110)
+#6 registradores
+#20 instruções
 #vetor com 10 números
